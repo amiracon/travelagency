@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mein Konto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo">
+    <i class="fas fa-plane-arrival"></i>
+    <h1>StudiJet</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#">Mein Konto</a></li>
+      <li><a href="#" onclick="logout()">Abmelden</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="konto-inhalt">
+  <h2>Willkommen in Ihrem Benutzerkonto</h2>
+
+  <!-- Hier können Sie den Inhalt Ihres Benutzerkontos anzeigen, z.B. gebuchte Reisen -->
+  <div class="gebuchte-reisen">
+    <h3>Ihre gebuchten Reisen:</h3>
+    <!-- Hier können Sie die Liste der gebuchten Reisen darstellen -->
+  </div>
+
+  <!-- Hier können Sie Stornierungsoptionen hinzufügen -->
+  <div class="stornierung">
+    <h3>Stornierungsoptionen:</h3>
+    <p>Um eine Reise zu stornieren, wählen Sie die entsprechende Option aus.</p>
+    <!-- Hier können Sie Formulare für Stornierungsoptionen hinzufügen -->
+  </div>
+</section>
+
+<footer>
+  <div class="footer-menu">
+    <ul>
+      <li><a href="impressum.html">Impressum</a></li>
+      <li><a href="#datenschutz">Datenschutz</a></li>
+      <li><a href="#agb">AGB</a></li>
+    </ul>
+  </div>
+</footer>
+
+<!-- Hier können Sie den Inhalt Ihrer Benutzerkonto-Seite einfügen, z.B. gebuchte Reisen und Stornierungsoptionen -->
+
+<!--<a href="#" onclick="logout()">Abmelden</a> &lt;!&ndash; Abmelde-Option, um sich auszuloggen &ndash;&gt;-->
+
+<script>
+  function logout() {
+    window.location.href = 'index.html';
+  }
+</script>
+</body>
+</html>

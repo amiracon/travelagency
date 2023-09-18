@@ -15,10 +15,11 @@
   </div>
   <nav>
     <ul>
+      <li><a href="#" onclick="openLoginPopup()">Anmelden</a></li>
       <li><a href="index.html">Homepage</a></li>
-      <li><a href="popup.html">Anmelden</a></li> <!-- Verlinkung zur Popup-Seite -->
+      <li><a href="popup.html">Registrieren</a></li> <!-- Verlinkung zur Popup-Seite -->
       <li><a href="angebot.html">Unsere Angebote</a></li>
-      <li><a href="#reise-stornieren">Reise stornieren</a></li>
+<!--      <li><a href="#reise-stornieren">Reise stornieren</a></li>-->
       <li><a href="#galerie">Galerie</a></li>
     </ul>
   </nav>
@@ -61,7 +62,9 @@
 </footer>
 
 <script>
-  // noch keine Ahnung
+  function openLoginPopup() {
+    window.open('login.html', '_blank', 'width=400,height=400'); // Öffnet das Popup in einem neuen Fenster oder Tab
+  }
 </script>
 </body>
 </html>
