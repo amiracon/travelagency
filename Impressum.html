@@ -215,7 +215,8 @@
   </div>
   <nav>
     <ul>
-      <li><a href="#anmelden" onclick="openPopup()">Anmelden</a></li>
+      <li><a href="index.html">Homepage</a></li>
+      <li><a href="popup.html">Anmelden</a></li> <!-- Verlinkung zur Popup-Seite -->
       <li><a href="angebot.html">Unsere Angebote</a></li>
       <li><a href="#reise-stornieren">Reise stornieren</a></li>
       <li><a href="#galerie">Galerie</a></li>
@@ -258,56 +259,5 @@
     </ul>
   </div>
 </footer>
-<!-- Popup-Fenster für Anmeldung -->
-<div class="popup-overlay" id="popup">
-  <div class="popup-content">
-    <span class="popup-close" onclick="closePopup()">&times;</span>
-    <h2>Anmeldung</h2>
-    <form id="registration-form" onsubmit="return false;">
-      <div class="input-group">
-        <label for="name">Name:</label>
-        <input type="text" id="name" required>
-      </div>
-
-      <div class="input-group">
-        <label for="password">Passwort:</label>
-        <input type="password" id="password" required>
-      </div>
-
-      <div class="input-group">
-        <label for="email">E-Mail:</label>
-        <input type="email" id="email" required>
-      </div>
-
-      <div class="input-group">
-        <label for="matrikelnummer">Matrikelnummer:</label>
-        <input type="text" id="matrikelnummer" required pattern="\d{8}" title="Bitte geben Sie eine 8-stellige numerische Matrikelnummer ein.">
-      </div>
-
-      <button onclick="register()">Registrieren</button>
-    </form>
-    <p id="result"></p>
-  </div>
-</div>
-
-<script>
-  function openPopup() {
-    document.getElementById("popup").style.display = "flex";
-  }
-
-  function closePopup() {
-    document.getElementById("popup").style.display = "none";
-  }
-
-  function register() {
-    const name = document.getElementById("name").value;
-    const password = document.getElementById("password").value;
-    const email = document.getElementById("email").value;
-    const matrikelnummer = document.getElementById("matrikelnummer").value;
-
-    // Hier wird eine Nachricht anstelle der Registrierungslogik angezeigt
-    document.getElementById("result").innerHTML = "Nach erfolgreicher Überprüfung Ihrer Matrikelnummer wird Ihr Konto freigeschaltet.";
-  }
-</script>
 </body>
 </html>
