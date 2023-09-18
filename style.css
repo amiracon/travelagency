@@ -150,20 +150,6 @@ footer {
     padding: 20px 0;
 }
 
-/* Stile für das Popup-Fenster */
-.popup-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .popup-content {
     background-color: #fff;
