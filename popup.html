@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudiJet - Anmeldung</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Popup-Fenster für Anmeldung -->
+<div class="popup-overlay" id="popup">
+    <div class="popup-content">
+        <span class="popup-close" onclick="closePopup()">&times;</span>
+        <h2>Anmeldung</h2>
+        <form id="registration-form" onsubmit="return false;">
+            <div class="input-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Passwort:</label>
+                <input type="password" id="password" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="matrikelnummer">Matrikelnummer:</label>
+                <input type="text" id="matrikelnummer" required pattern="\d{8}" title="Bitte geben Sie eine 8-stellige numerische Matrikelnummer ein.">
+            </div>
+
+            <button onclick="register()">Registrieren</button>
+        </form>
+        <p id="result"></p>
+    </div>
+</div>
+
+<script>
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+    }
+
+    function register() {
+        const name = document.getElementById("name").value;
+        const password = document.getElementById("password").value;
+        const email = document.getElementById("email").value;
+        const matrikelnummer = document.getElementById("matrikelnummer").value;
+
+
+        // if (registrierungErfolgreich) {
+        //     window.location.href = "index.html"; // Weiterleitung zur Startseite
+
+
+        // Hier wird eine Nachricht anstelle der Registrierungslogik angezeigt
+        document.getElementById("result").innerHTML = "Nach erfolgreicher Überprüfung Ihrer Matrikelnummer wird Ihr Konto freigeschaltet.";
+
+        // Weiterleitung zur Homepage (hier vorübergehend auskommentiert)
+        window.location.href = "index.html";
+    }
+</script>
+</body>
+</html>
