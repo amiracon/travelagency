@@ -392,3 +392,59 @@ footer {
     border: 1px solid #ccc;
     border-radius: 3px;
 }
+
+  /* Stilregeln für die Angebote innerhalb der Reiseziele-Liste */
+  #reiseziele ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  #reiseziele li {
+    width: calc(33.33% - 20px); /*  die Breite der Angebote anpassen */
+    margin: 10px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  #reiseziele li:hover {
+    transform: translateY(-5px);
+  }
+  
+  #reiseziele img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /*für die Überschriften und Beschreibungen */
+  #reiseziele h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  #reiseziele p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  /* Stilregeln für den "Mehr erfahren" */
+  #reiseziele a {
+    text-decoration: none;
+    background-color: #0074d9;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  /* Hover-Effekt für den Link */
+  #reiseziele a:hover {
+    background-color: #0056b3;
+  }
+  
