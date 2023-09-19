@@ -23,17 +23,20 @@
 <section class="konto-inhalt">
   <h2>Willkommen in Ihrem Benutzerkonto</h2>
 
-  <!-- Hier können Sie den Inhalt Ihres Benutzerkontos anzeigen, z.B. gebuchte Reisen -->
-  <div class="gebuchte-reisen">
-    <h3>Ihre gebuchten Reisen:</h3>
-    <!-- Hier können Sie die Liste der gebuchten Reisen darstellen -->
-  </div>
+  <!-- gebuchte Reisen -->
+  <section class="booking-details">
+    <h2>Meine <a href="thailand.html">Thailand</a> Rundreise</h2>
+    <p>Reisedatum: 15. Oktober 2023 - 30. Oktober 2023</p>
+    <p>Ziel: Thailand</p>
+    <p>Reiseart: Rundreise</p>
+    <p>Preis: 2500€</p>
+  </section>
 
-  <!-- Hier können Sie Stornierungsoptionen hinzufügen -->
+  <!-- Stornierungsoptionen  -->
   <div class="stornierung">
-    <h3>Stornierungsoptionen:</h3>
-    <p>Um eine Reise zu stornieren, wählen Sie die entsprechende Option aus.</p>
-    <!-- Hier können Sie Formulare für Stornierungsoptionen hinzufügen -->
+    <h3>Stornierung</h3>
+    <p>Um eine Reise zu stornieren, drücken Sie die entsprechende Taste.</p>
+    <button id="stornierungs-button">Reise Stornieren</button>
   </div>
 </section>
 
@@ -47,14 +50,15 @@
   </div>
 </footer>
 
-<!-- Hier können Sie den Inhalt Ihrer Benutzerkonto-Seite einfügen, z.B. gebuchte Reisen und Stornierungsoptionen -->
-
-<!--<a href="#" onclick="logout()">Abmelden</a> &lt;!&ndash; Abmelde-Option, um sich auszuloggen &ndash;&gt;-->
-
 <script>
   function logout() {
     window.location.href = 'index.html';
   }
+</script>
+<script>
+  document.getElementById("stornierungs-button").addEventListener("click", function() {
+    alert("Stornierung bestätigt. Die Rückerstattung wird veranlasst.");
+  });
 </script>
 </body>
 </html>
