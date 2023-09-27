@@ -1,0 +1,273 @@
+Index: konto.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"de\">\r\n<head>\r\n  <meta charset=\"UTF-8\">\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n  <title>Mein Konto</title>\r\n  <link rel=\"stylesheet\" href=\"style.css\">\r\n  <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css\">\r\n\r\n</head>\r\n<body>\r\n<header>\r\n  <div class=\"logo\">\r\n    <i class=\"fas fa-plane-departure\"></i>\r\n    <h1>StudiJet</h1>\r\n  </div>\r\n  <nav>\r\n    <ul>\r\n      <li><a href=\"#\">Mein Konto</a></li>\r\n      <li><a href=\"#\" onclick=\"logout()\">Abmelden</a></li>\r\n    </ul>\r\n  </nav>\r\n</header>\r\n\r\n<section class=\"konto-inhalt\">\r\n  <h2>Willkommen in Ihrem Benutzerkonto</h2>\r\n\r\n  <!-- gebuchte Reisen -->\r\n  <section class=\"booking-details\">\r\n    <h2>Meine <a href=\"thailand.html\">Thailand</a> Rundreise</h2>\r\n    <p>Reisedatum: 15. Oktober 2023 - 30. Oktober 2023</p>\r\n    <p>Ziel: Thailand</p>\r\n    <p>Reiseart: Rundreise</p>\r\n    <p>Preis: 2500€</p>\r\n  </section>\r\n\r\n  <!-- Stornierungsoptionen  -->\r\n  <div class=\"stornierung\">\r\n    <h3>Stornierung</h3>\r\n    <p>Um eine Reise zu stornieren, drücken Sie die entsprechende Taste.</p>\r\n    <button id=\"stornierungs-button\">Reise Stornieren</button>\r\n  </div>\r\n</section>\r\n\r\n<footer>\r\n  <div class=\"footer-menu\">\r\n    <ul>\r\n      <li><a href=\"impressum.html\">Impressum</a></li>\r\n      <li><a href=\"#datenschutz\">Datenschutz</a></li>\r\n      <li><a href=\"#agb\">AGB</a></li>\r\n    </ul>\r\n  </div>\r\n</footer>\r\n\r\n<script>\r\n  function logout() {\r\n    window.location.href = 'index.html';\r\n  }\r\n</script>\r\n<script>\r\n  document.getElementById(\"stornierungs-button\").addEventListener(\"click\", function() {\r\n    alert(\"Stornierung bestätigt. Die Rückerstattung wird veranlasst.\");\r\n  });\r\n</script>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/konto.html b/konto.html
+--- a/konto.html	(revision 31da4a82aac2e3d3da0c0cdad1ce70c01d69fbdb)
++++ b/konto.html	(date 1695636150050)
+@@ -28,10 +28,10 @@
+   <!-- gebuchte Reisen -->
+   <section class="booking-details">
+     <h2>Meine <a href="thailand.html">Thailand</a> Rundreise</h2>
+-    <p>Reisedatum: 15. Oktober 2023 - 30. Oktober 2023</p>
+-    <p>Ziel: Thailand</p>
+-    <p>Reiseart: Rundreise</p>
+-    <p>Preis: 2500€</p>
++    <p><strong>Reisedatum:</strong> 15. Oktober 2023 - 30. Oktober 2023</p>
++    <p><strong>Ziel:</strong> Thailand</p>
++    <p><strong>Reiseart:</strong> Rundreise</p>
++    <p><strong>Preis:</strong> 2500€</p>
+   </section>
+ 
+   <!-- Stornierungsoptionen  -->
+Index: style.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>body {\r\n    font-family: \"Helvetica Neue\", sans-serif; /* Moderner Font */\r\n    background-color: #f0f0f0; /* Hellgrau */\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\n\r\nheader {\r\n    background-color: #007acc; /* Blau */\r\n    color: white;\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n    padding: 20px;\r\n}\r\nfooter {\r\n    text-align: center;\r\n    background-color: #007acc; /* Blau */\r\n    color: white;\r\n    padding: 20px 0;\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n}\r\n\r\n.footer-logo {\r\n    display: flex;\r\n    align-items: center;\r\n}\r\n\r\n.footer-logo i {\r\n    font-size: 24px; /* Kleineres Icon */\r\n    color: #ffffff;\r\n    margin-right: 10px;\r\n}\r\n\r\n.footer-logo h1 {\r\n    font-size: 20px; /* Kleinerer Text */\r\n    margin: 0;\r\n}\r\n\r\n.footer-menu ul {\r\n    list-style: none;\r\n    padding: 0;\r\n    display: flex;\r\n    justify-content: flex-end;\r\n}\r\n\r\n.footer-menu li {\r\n    margin: 0 20px;\r\n}\r\n\r\n.footer-menu a {\r\n    text-decoration: none;\r\n    color: #ffffff;\r\n}\r\n\r\n.footer-menu a:hover {\r\n    text-decoration: underline;\r\n}\r\n\r\n.logo {\r\n    display: flex;\r\n    align-items: center;\r\n}\r\n\r\n.logo i {\r\n    font-size: 48px;\r\n    color: #ffffff;\r\n    margin-right: 10px;\r\n}\r\n\r\n.logo h1 {\r\n    font-size: 24px;\r\n    margin: 0;\r\n}\r\n\r\nnav ul {\r\n    list-style: none;\r\n    padding: 0;\r\n    display: flex;\r\n    justify-content: flex-end;\r\n}\r\n\r\nnav li {\r\n    margin: 0 20px;\r\n}\r\n\r\nnav a {\r\n    text-decoration: none;\r\n    color: #ffffff;\r\n}\r\n\r\nnav a:hover {\r\n    text-decoration: underline;\r\n}\r\n\r\n.startseite {\r\n    background-color: #007acc;\r\n    color: white;\r\n    text-align: center;\r\n    padding: 40px 0;\r\n}\r\n\r\n.bestseller {\r\n    background-color: #ffffff;\r\n    padding: 40px 0;\r\n    text-align: center;\r\n}\r\n\r\n.bestseller h2 {\r\n    font-size: 36px;\r\n    margin-bottom: 20px;\r\n}\r\n\r\n.reise {\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n    justify-content: center;\r\n}\r\n\r\n.reise .reisekarte {\r\n    border: 1px solid #ccc;\r\n    border-radius: 5px;\r\n    padding: 20px;\r\n    margin: 10px;\r\n    max-width: 300px;\r\n    background-color: #f0f0f0;\r\n}\r\n\r\n.reise .reisekarte img {\r\n    max-width: 100%;\r\n    height: auto;\r\n}\r\n\r\n.reise .reisekarte h3 {\r\n    font-size: 24px;\r\n    margin: 10px 0;\r\n}\r\n\r\n.reise .reisekarte p {\r\n    font-size: 16px;\r\n    margin: 0;\r\n}\r\n\r\nfooter {\r\n    text-align: center;\r\n    background-color: #007acc;\r\n    color: white;\r\n    padding: 20px 0;\r\n}\r\n\r\n\r\n.popup-content {\r\n    background-color: #fff;\r\n    padding: 20px;\r\n    border-radius: 5px;\r\n    box-shadow: 0px 0px 10px 0px #000;\r\n    max-width: 400px;\r\n    width: 100%;\r\n    text-align: center;\r\n}\r\n\r\n.popup-close {\r\n    float: right;\r\n    cursor: pointer;\r\n}\r\n\r\n.input-group {\r\n    display: flex;\r\n    flex-direction: column;\r\n    margin-bottom: 10px;\r\n}\r\n\r\n.input-group label {\r\n    margin-bottom: 5px;\r\n}\r\n\r\n.input-group input {\r\n    padding: 5px;\r\n    border: 1px solid #ccc;\r\n    border-radius: 3px;\r\n}\r\nbody {\r\n    font-family: \"Helvetica Neue\", sans-serif; /* Moderner Font */\r\n    background-color: #f0f0f0; /* Hellgrau */\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\n\r\nheader {\r\n    background-color: #007acc; /* Blau */\r\n    color: white;\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n    padding: 20px;\r\n}\r\nfooter {\r\n    text-align: center;\r\n    background-color: #007acc; /* Blau */\r\n    color: white;\r\n    padding: 20px 0;\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n}\r\n\r\n.footer-logo {\r\n    display: flex;\r\n    align-items: center;\r\n}\r\n\r\n.footer-logo i {\r\n    font-size: 24px; /* Kleineres Icon */\r\n    color: #ffffff;\r\n    margin-right: 10px;\r\n}\r\n\r\n.footer-logo h1 {\r\n    font-size: 20px; /* Kleinerer Text */\r\n    margin: 0;\r\n}\r\n\r\n.footer-menu ul {\r\n    list-style: none;\r\n    padding: 0;\r\n    display: flex;\r\n    justify-content: flex-end;\r\n}\r\n\r\n.footer-menu li {\r\n    margin: 0 20px;\r\n}\r\n\r\n.footer-menu a {\r\n    text-decoration: none;\r\n    color: #ffffff;\r\n}\r\n\r\n.footer-menu a:hover {\r\n    text-decoration: underline;\r\n}\r\n\r\n.logo {\r\n    display: flex;\r\n    align-items: center;\r\n}\r\n\r\n.logo i {\r\n    font-size: 48px;\r\n    color: #ffffff;\r\n    margin-right: 10px;\r\n}\r\n\r\n.logo h1 {\r\n    font-size: 24px;\r\n    margin: 0;\r\n}\r\n\r\nnav ul {\r\n    list-style: none;\r\n    padding: 0;\r\n    display: flex;\r\n    justify-content: flex-end;\r\n}\r\n\r\nnav li {\r\n    margin: 0 20px;\r\n}\r\n\r\nnav a {\r\n    text-decoration: none;\r\n    color: #ffffff;\r\n}\r\n\r\nnav a:hover {\r\n    text-decoration: underline;\r\n}\r\n\r\n.startseite {\r\n    background-color: white;\r\n    color: black;\r\n    text-align: center;\r\n    padding: 40px 0;\r\n}\r\n\r\n.bestseller {\r\n    background-color: #ffffff;\r\n    padding: 40px 0;\r\n    text-align: center;\r\n}\r\n\r\n.bestseller h2 {\r\n    font-size: 36px;\r\n    margin-bottom: 20px;\r\n}\r\n\r\n.reise {\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n    justify-content: center;\r\n}\r\n\r\n.reise .reisekarte {\r\n    border: 1px solid #ccc;\r\n    border-radius: 5px;\r\n    padding: 20px;\r\n    margin: 10px;\r\n    max-width: 300px;\r\n    background-color: #f0f0f0;\r\n}\r\n\r\n.reise .reisekarte img {\r\n    max-width: 100%;\r\n    height: auto;\r\n}\r\n\r\n.reise .reisekarte h3 {\r\n    font-size: 24px;\r\n    margin: 10px 0;\r\n}\r\n\r\n.reise .reisekarte p {\r\n    font-size: 16px;\r\n    margin: 0;\r\n}\r\n\r\nfooter {\r\n    text-align: center;\r\n    background-color: #007acc;\r\n    color: white;\r\n    padding: 20px 0;\r\n}\r\n\r\n/* Stile für das Popup-Fenster */\r\n.popup-overlay {\r\n    display: none;\r\n    position: fixed;\r\n    top: 0;\r\n    left: 0;\r\n    width: 100%;\r\n    height: 100%;\r\n    background-color: rgba(0, 0, 0, 0.7);\r\n    z-index: 1;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.popup-content {\r\n    background-color: #fff;\r\n    padding: 20px;\r\n    border-radius: 5px;\r\n    box-shadow: 0px 0px 10px 0px #000;\r\n    max-width: 400px;\r\n    width: 100%;\r\n    text-align: center;\r\n}\r\n\r\n.popup-close {\r\n    float: right;\r\n    cursor: pointer;\r\n}\r\n\r\n.input-group {\r\n    display: flex;\r\n    flex-direction: column;\r\n    margin-bottom: 10px;\r\n}\r\n\r\n.input-group label {\r\n    margin-bottom: 5px;\r\n}\r\n\r\n.input-group input {\r\n    padding: 5px;\r\n    border: 1px solid #ccc;\r\n    border-radius: 3px;\r\n}\r\n/* Stilregeln für die Angebote innerhalb der Reiseziele-Liste */\r\n#reiseziele ul {\r\n    list-style: none;\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n    justify-content: space-between;\r\n  }\r\n  \r\n  #reiseziele li {\r\n    width: calc(33.33% - 20px); /* Hier kannst du die Breite der Angebote anpassen */\r\n    margin: 10px;\r\n    padding: 10px;\r\n    background-color: #f5f5f5;\r\n    border: 1px solid #ddd;\r\n    border-radius: 5px;\r\n    text-align: center;\r\n    transition: transform 0.2s ease-in-out;\r\n  }\r\n  \r\n  #reiseziele li:hover {\r\n    transform: translateY(-5px);\r\n  }\r\n  \r\n  #reiseziele img {\r\n    max-width: 100%;\r\n    height: auto;\r\n  }\r\n  \r\n  /* Stilregeln für die Überschriften und Beschreibungen */\r\n  #reiseziele h3 {\r\n    font-size: 1.2rem;\r\n    margin: 10px 0;\r\n  }\r\n  \r\n  #reiseziele p {\r\n    font-size: 1rem;\r\n    margin: 5px 0;\r\n  }\r\n  \r\n  /* Stilregeln für den \"Mehr erfahren\" Link */\r\n  #reiseziele a {\r\n    text-decoration: none;\r\n    background-color: #0074d9;\r\n    color: #fff;\r\n    padding: 5px 10px;\r\n    border-radius: 5px;\r\n    display: inline-block;\r\n    margin-top: 10px;\r\n  }\r\n  \r\n  /* Hover-Effekt für den Link */\r\n  #reiseziele a:hover {\r\n    background-color: #0056b3;\r\n  }\r\n  
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/style.css b/style.css
+--- a/style.css	(revision 31da4a82aac2e3d3da0c0cdad1ce70c01d69fbdb)
++++ b/style.css	(date 1695636133166)
+@@ -432,4 +432,234 @@
+   #reiseziele a:hover {
+     background-color: #0056b3;
+   }
+-  
+\ No newline at end of file
++body {
++    font-family: Arial, sans-serif;
++    background-color: #f2f2f2;
++}
++
++.popup-overlay {
++    display: flex;
++    justify-content: center;
++    align-items: center;
++    height: 100vh;
++    background-color: rgba(0, 0, 0, 0.5);
++    position: fixed;
++    top: 0;
++    left: 0;
++    right: 0;
++    bottom: 0;
++}
++.input-group {
++    text-align: center; /* Zentriert den Text in den Eingabefeldern */
++    margin: 0 auto; /* Zentriert das Eingabefeld horizontal */
++}
++.popup-content {
++    background-color: white;
++    border-radius: 10px;
++    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
++    padding: 20px;
++    text-align: center;
++}
++
++.popup-close {
++    position: absolute;
++    top: 10px;
++    right: 10px;
++    font-size: 24px;
++    cursor: pointer;
++}
++
++h2 {
++    color: #007acc;
++}
++
++label {
++    display: block;
++    margin-bottom: 10px;
++    color: #007acc;
++}
++
++input[type="email"],
++input[type="password"] {
++    width: 100%;
++    padding: 10px;
++    margin-bottom: 20px;
++    border: 1px solid #ccc;
++    border-radius: 5px;
++}
++
++button {
++    background-color: #007acc;
++    color: white;
++    padding: 10px 20px;
++    border: none;
++    border-radius: 5px;
++    cursor: pointer;
++}
++
++button:hover {
++    background-color: #00508f;
++}
++.input-group {
++    margin-bottom: 20px;
++}
++
++label {
++    display: block;
++    font-weight: bold;
++    text-align: left; /* Text links ausrichten */
++}
++
++input[type="text"],
++input[type="email"],
++input[type="password"] {
++    width: 100%;
++    padding: 10px;
++    border: 1px solid #ccc;
++    border-radius: 5px;
++    box-sizing: border-box; /* Hinzufügen, um das Box-Modell zu korrigieren */
++}
++body {
++    font-family: Arial, sans-serif;
++    margin: 0;
++    padding: 0;
++    background-color: #f4f4f4;
++}
++
++.container {
++    max-width: 1200px;
++    margin: 0 auto;
++    padding: 20px;
++}
++
++/* Header-Stile */
++header {
++    background-color: #007bff;
++    color: #fff;
++    padding: 10px 0;
++}
++
++.logo {
++    display: flex;
++    align-items: center;
++}
++
++.logo i {
++    font-size: 36px;
++    margin-right: 10px;
++}
++
++.logo h1 {
++    font-size: 24px;
++    margin: 0;
++}
++
++nav ul {
++    list-style-type: none;
++    margin: 0;
++    padding: 0;
++}
++
++nav ul li {
++    display: inline;
++    margin-right: 20px;
++}
++
++nav a {
++    text-decoration: none;
++    color: #fff;
++    font-weight: bold;
++}
++
++/* Konto-Inhaltsstil */
++.konto-inhalt {
++    padding: 20px;
++    background-color: #fff;
++    border-radius: 5px;
++    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
++}
++
++.konto-inhalt h2 {
++    font-size: 28px;
++    margin-bottom: 20px;
++}
++
++.booking-details {
++    margin-bottom: 40px;
++}
++
++.booking-details h2 {
++    font-size: 24px;
++    margin-bottom: 10px;
++}
++
++.booking-details p {
++    font-size: 16px;
++    margin: 5px 0;
++}
++
++.stornierung {
++    border-top: 1px solid #ccc;
++    padding-top: 20px;
++}
++
++.stornierung h3 {
++    font-size: 20px;
++    margin-bottom: 10px;
++}
++
++.stornierungs-button {
++    background-color: #ff5733;
++    color: #fff;
++    border: none;
++    border-radius: 5px;
++    padding: 10px 20px;
++    font-size: 16px;
++    cursor: pointer;
++    transition: background-color 0.3s ease;
++}
++
++.stornierungs-button:hover {
++    background-color: #ff3300;
++}
++
++/* Footer-Stile */
++footer {
++    background-color: #007acc;
++    color: #fff;
++    padding: 10px 0;
++    text-align: center;
++}
++
++.footer-menu ul {
++    list-style-type: none;
++    margin: 0;
++    padding: 0;
++}
++
++.footer-menu ul li {
++    display: inline;
++    margin-right: 20px;
++}
++
++.footer-menu a {
++    text-decoration: none;
++    color: #fff;
++}
++
++/* Responsives Design */
++@media (max-width: 768px) {
++    .container {
++        padding: 10px;
++    }
++}
++.booking-details p {
++    font-size: 16px;
++    margin: 5px 0;
++    line-height: 1.5; /* Zeilenabstand erhöhen */
++}
++
++.booking-details strong {
++    font-weight: bold;
++    color: #007bff; /* Ändern Sie die Farbe nach Bedarf */
++}
+\ No newline at end of file
