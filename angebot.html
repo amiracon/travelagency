@@ -26,76 +26,96 @@
         </ul>
       </nav>
   </header>
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Suche dein Reiseziel">
 
-<style>
- 
+  <ul id="myUL">
 
-</style>
-<section id="reiseziele">
-  <h2>Unsere Reiseziele</h2>
-  <ul>
-    <li>
-      <img src="https://images.ctfassets.net/rc3dlxapnu6k/4EIdzcXtVA6OhzaSxIzN2m/0d22f33e34456a8a6486751127e1a5db/Thailand_Phuket_Boote.jpg?w=1238&h=696&fl=progressive&q=50&fm=jpg" alt="Reiseziel 1">
-      <h3>Thailand Rundreise</h3>
-      <p>Kurze Beschreibung des Reiseziels...</p>
-      <p>Preis ab: $xxx</p>
-      <a href="thailand.html">Mehr erfahren</a>
-    </li>
-    <li>
-      <img src="https://image.geo.de/30135476/t/zX/v3/w1440/r0/-/matera-f-208435467-jpg--76972-.jpg" alt="Reiseziel 2">
-      <h3> Matera 5 Tage Citytrip </h3>
-      <p>Kurze Beschreibung des Reiseziels...</p>
-      <p>Preis ab: $xxx</p>
-      <a href="ziel2_detail.html">Mehr erfahren</a>
-    </li>
-    <li>
-      <img src="https://www.ab-in-den-urlaub.de/magazin/wp-content/uploads/2023/05/1684224900_Japan-Fuji.jpg" alt="Reiseziel 1">
-      <h3>Japan Rundreise</h3>
-      <p>Kurze Beschreibung des Reiseziels...</p>
-      <p>Preis ab: $xxx</p>
-      <a href="ziel1_detail.html">Mehr erfahren</a>
-    </li>
-    <li>
-      <img src="https://cdn.britannica.com/06/171306-050-C88DD752/Aurora-borealis-peninsula-Snaefellsnes-Iceland-March-2013.jpg" alt="Reiseziel 1">
-      <h3> Island Polarlichter Tour</h3>
-      <p>Kurze Beschreibung des Reiseziels...</p>
-      <p>Preis ab: $xxx</p>
-      <a href="ziel1_detail.html">Mehr erfahren</a>
-    </li>
-    <li>
-      <img src="https://www.travelbook.de/data/uploads/2022/04/gettyimages-1148034985-1040x690.jpg" alt="Reiseziel 1">
-      <h3> Marrakesch </h3>
-      <p>Kurze Beschreibung des Reiseziels...</p>
-      <p>Preis ab: $xxx</p>
-      <a href="ziel1_detail.html">Mehr erfahren</a>
-    </li>
-    <li>
-      <img src="https://www.merkur.de/bilder/2023/02/09/92078101/30863365-strand-krabi-thailand-2lOKzDx3Whec.jpg" alt="Reiseziel 1">
-      <h3>Thailand Rundreise</h3>
-      <p>Kurze Beschreibung des Reiseziels...</p>
-      <p>Preis ab: $xxx</p>
-      <a href="ziel1_detail.html">Mehr erfahren</a>
-    </li>
-    <li>
-      <img src="https://www.merkur.de/bilder/2023/02/09/92078101/30863365-strand-krabi-thailand-2lOKzDx3Whec.jpg" alt="Reiseziel 1">
-      <h3>Thailand Rundreise</h3>
-      <p>Kurze Beschreibung des Reiseziels...</p>
-      <p>Preis ab: $xxx</p>
-      <a href="ziel1_detail.html">Mehr erfahren</a>
-    </li>
-    <li>
-      <img src="https://www.merkur.de/bilder/2023/02/09/92078101/30863365-strand-krabi-thailand-2lOKzDx3Whec.jpg" alt="Reiseziel 1">
-      <h3>Thailand Rundreise</h3>
-      <p>Kurze Beschreibung des Reiseziels...</p>
-      <p>Preis ab: $xxx</p>
-      <a href="ziel1_detail.html">Mehr erfahren</a>
-    </li>
   </ul>
-</section>
+
+  <!DOCTYPE html>
+  <html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .box {
+            width: 30%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        .box img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .button {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+  </head>
+  <body>
+  <div class="container">
+    <div class="box">
+      <img src="https://www.urlaubstracker.de/wp-content/uploads/2018/02/thailand-krabi-boot-klippe-1000x667.jpg" alt="Bild 1">
+      <p>Thailand</p>
+      <div class="button">
+        <button>Buchen</button>
+      </div>
+    </div>
+    <div class="box">
+      <img src="bild2.jpg" alt="Bild 2">
+      <p>Box 2</p>
+      <div class="button">
+        <button>Buchen</button>
+      </div>
+    </div>
+    <div class="box">
+      <img src="bild3.jpg" alt="Bild 3">
+      <p>Box 3</p>
+      <div class="button">
+        <button>Buchen</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hier beginnt eine neue Reihe -->
+  <div class="container">
+    <div class="box">
+      <img src="bild4.jpg" alt="Bild 4">
+      <p>Box 4</p>
+      <div class="button">
+        <button>Buchen</button>
+      </div>
+    </div>
+    <div class="box">
+      <img src="bild5.jpg" alt="Bild 5">
+      <p>Box 5</p>
+      <div class="button">
+        <button>Buchen</button>
+      </div>
+    </div>
+    <div class="box">
+      <img src="bild6.jpg" alt="Bild 6">
+      <p>Box 6</p>
+      <div class="button">
+        <button>Buchen</button>
+      </div>
+    </div>
+  </div>
+  </body>
+  </html>
 
 
 
-<footer>
+    <footer>
   <p>&copy; 2023 StudiJet</p>
 </footer>
 </body>
