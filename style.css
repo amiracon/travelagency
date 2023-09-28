@@ -384,41 +384,44 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-  
-  #reiseziele li {
+}
+
+#reiseziele li {
     width: calc(33.33% - 20px); /* Hier kannst du die Breite der Angebote anpassen */
     margin: 10px;
     padding: 10px;
     background-color: #f5f5f5;
-    border: 1px solid #ddd;
+    border: none; /* Keine Ränder */
     border-radius: 5px;
     text-align: center;
     transition: transform 0.2s ease-in-out;
-  }
-  
-  #reiseziele li:hover {
+}
+
+#reiseziele li:hover {
     transform: translateY(-5px);
-  }
-  
-  #reiseziele img {
+}
+
+#reiseziele img {
     max-width: 100%;
-    height: auto;
-  }
-  
-  /* Stilregeln für die Überschriften und Beschreibungen */
-  #reiseziele h3 {
+    height: 200px; /* Hier kannst du die Höhe der Bilder anpassen */
+    width: 100%; /* Alle Bilder haben die gleiche Breite */
+    object-fit: cover; /* Skalieren und Beschneiden, um das Seitenverhältnis zu ändern */
+    border-radius: 10px; /* Abgerundete Ecken für das Bild */
+}
+
+/* Stilregeln für die Überschriften und Beschreibungen */
+#reiseziele h3 {
     font-size: 1.2rem;
     margin: 10px 0;
-  }
-  
-  #reiseziele p {
+}
+
+#reiseziele p {
     font-size: 1rem;
     margin: 5px 0;
-  }
-  
-  /* Stilregeln für den "Mehr erfahren" Link */
-  #reiseziele a {
+}
+
+/* Stilregeln für den "Mehr erfahren" Link */
+#reiseziele a {
     text-decoration: none;
     background-color: #0074d9;
     color: #fff;
@@ -426,12 +429,12 @@ footer {
     border-radius: 5px;
     display: inline-block;
     margin-top: 10px;
-  }
-  
-  /* Hover-Effekt für den Link */
-  #reiseziele a:hover {
+}
+
+/* Hover-Effekt für den Link */
+#reiseziele a:hover {
     background-color: #0056b3;
-  }
+}
 
 #myInput {
   background-image: url('/css/searchicon.png'); /* Add a search icon to input */
@@ -480,4 +483,5 @@ footer {
             margin-top: 20px;
         }
 
-  
+
+
