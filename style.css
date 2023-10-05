@@ -384,41 +384,44 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-  
-  #reiseziele li {
+}
+
+#reiseziele li {
     width: calc(33.33% - 20px); /* Hier kannst du die Breite der Angebote anpassen */
     margin: 10px;
     padding: 10px;
     background-color: #f5f5f5;
-    border: 1px solid #ddd;
+    border: none; /* Keine Ränder */
     border-radius: 5px;
     text-align: center;
     transition: transform 0.2s ease-in-out;
-  }
-  
-  #reiseziele li:hover {
+}
+
+#reiseziele li:hover {
     transform: translateY(-5px);
-  }
-  
-  #reiseziele img {
+}
+
+#reiseziele img {
     max-width: 100%;
-    height: auto;
-  }
-  
-  /* Stilregeln für die Überschriften und Beschreibungen */
-  #reiseziele h3 {
+    height: 200px; /* Hier kannst du die Höhe der Bilder anpassen */
+    width: 100%; /* Alle Bilder haben die gleiche Breite */
+    object-fit: cover; /* Skalieren und Beschneiden, um das Seitenverhältnis zu ändern */
+    border-radius: 10px; /* Abgerundete Ecken für das Bild */
+}
+
+/* Stilregeln für die Überschriften und Beschreibungen */
+#reiseziele h3 {
     font-size: 1.2rem;
     margin: 10px 0;
-  }
-  
-  #reiseziele p {
+}
+
+#reiseziele p {
     font-size: 1rem;
     margin: 5px 0;
-  }
-  
-  /* Stilregeln für den "Mehr erfahren" Link */
-  #reiseziele a {
+}
+
+/* Stilregeln für den "Mehr erfahren" Link */
+#reiseziele a {
     text-decoration: none;
     background-color: #0074d9;
     color: #fff;
@@ -426,10 +429,159 @@ footer {
     border-radius: 5px;
     display: inline-block;
     margin-top: 10px;
-  }
-  
-  /* Hover-Effekt für den Link */
-  #reiseziele a:hover {
+}
+
+/* Hover-Effekt für den Link */
+#reiseziele a:hover {
     background-color: #0056b3;
-  }
-  
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myUL {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd; /* Add a border to all links */
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6; /* Grey background color */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  font-size: 18px; /* Increase the font-size */
+  color: black; /* Add a black text color */
+  display: block; /* Make it into a block element to fill the whole list */
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+.container {
+            display: flex;
+            flex-wrap: wrap; /* Umbruch auf neue Zeile ermöglichen */
+        }
+
+        .box img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+/* Neue*/
+/* Reset CSS */
+
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Allgemeine Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #0074d9;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.angebote {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.angebot {
+    width: calc(33.33% - 20px);
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.angebot:hover {
+    transform: translateY(-5px);
+}
+
+.angebot img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.angebot h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.angebot p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.angebot a {
+    text-decoration: none;
+    background-color: #0074d9;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.angebot a:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0074d9;
+    color: #fff;
+}
