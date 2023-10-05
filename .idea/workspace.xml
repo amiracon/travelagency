@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48e1049a-1eca-4b1c-95cf-02700efd5ff9" name="Changes" comment="auf der startseite ist header jetzt kleiner">
-      <change afterPath="$PROJECT_DIR$/.idea/Datenschutz.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Datenschutz.html" afterDir="false" />
+    <list default="true" id="48e1049a-1eca-4b1c-95cf-02700efd5ff9" name="Changes" comment="ich mache die Datenschutz Seite erstellt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datenschutz.html" beforeDir="false" afterPath="$PROJECT_DIR$/Datenschutz.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695630128394</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="ich mache die Datenschutz Seite erstellt">
+      <created>1695821637534</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1695821637534</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +217,7 @@
     <MESSAGE value="hab Menü angepasst" />
     <MESSAGE value="neues logo" />
     <MESSAGE value="auf der startseite ist header jetzt kleiner" />
-    <option name="LAST_COMMIT_MESSAGE" value="auf der startseite ist header jetzt kleiner" />
+    <MESSAGE value="ich mache die Datenschutz Seite erstellt" />
+    <option name="LAST_COMMIT_MESSAGE" value="ich mache die Datenschutz Seite erstellt" />
   </component>
 </project>
