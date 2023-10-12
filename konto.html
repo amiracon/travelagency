@@ -6,10 +6,220 @@
   <title>Mein Konto</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
 
+    header {
+      background-color: #007acc;
+      color: #fff;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo i {
+      font-size: 36px;
+      margin-right: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .konto-inhalt {
+      margin: 20px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .konto-inhalt h2 {
+      font-size: 24px;
+    }
+
+    .user-info {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .user-info img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+
+    .user-info p {
+      font-size: 18px;
+    }
+
+    .legitimation {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .legitimation i {
+      color: #28a745; /* Grün für Bestätigung */
+      font-size: 24px;
+      margin-right: 10px;
+    }
+
+    .legitimation p {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .edit-button {
+      margin-top: 20px;
+    }
+
+    .edit-button button {
+      background-color: #007acc; /* Blau wie der Header */
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+
+    .edit-button button:hover {
+      background-color: #007acc; /* Dunklere Blauton beim Hover */
+    }
+
+    .booking-details,
+    .reviews {
+      background-color: #f9f9f9; /* Hintergrundfarbe ändern */
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Leichte Schatten hinzufügen */
+    }
+
+    .booking-details h2,
+    .reviews h2 {
+      font-size: 24px;
+      color: #3498db; /* Blaue Textfarbe für den Titel */
+    }
+
+    .booking-details p,
+    .reviews p {
+      font-size: 18px;
+      color: #555; /* Textfarbe ändern */
+    }
+    #language-select {
+      background-color: #007acc; /* Blau wie der Header */
+      color: #fff;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+
+    #language-select:hover {
+      background-color: #1a6ca8; /* Dunklere Blauton beim Hover */
+    }
+
+    #payment-button {
+      background-color: #007acc; /* Blau wie der Header */
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+
+    #payment-button:hover {
+      background-color: #1a6ca8; /* Dunklere Blauton beim Hover */
+    }
+    .social-media-icons {
+      margin-right: 20px;
+    }
+
+    .social-icon {
+      text-decoration: none;
+      color: #fff;
+      font-size: 24px;
+      margin: 0 10px;
+    }
+
+    .social-icon:hover {
+      color: #1a6ca8; /* Ändern Sie die Farbe beim Hover-Effekt */
+    }
+    .referral-bonus {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .referral-bonus h2 {
+      font-size: 24px;
+      color: #3498db; /* Blaue Textfarbe für den Titel */
+    }
+
+    .referral-bonus p {
+      font-size: 18px;
+      color: #555; /* Textfarbe ändern */
+    }
+
+    .referral-bonus ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .referral-bonus li {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    .referral-bonus li strong {
+      color: #28a745; /* Grün für die Bonus-Nummer */
+      font-size: 18px;
+      margin-right: 5px;
+    }
+    .referral-button {
+      display: inline-block;
+      background-color: #007acc; /* Blau wie der Header */
+      color: #fff;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+
+    .referral-button:hover {
+      background-color: #007acc; /* Dunklere Blauton beim Hover */
+    }
+  </style>
 </head>
 <body>
 <header>
+
   <div class="logo">
     <i class="fas fa-plane-departure"></i>
     <h1>StudiJet</h1>
@@ -20,10 +230,46 @@
       <li><a href="#" onclick="logout()">Abmelden</a></li>
     </ul>
   </nav>
+  <select id="language-select">
+    <option value="de">Deutsch</option>
+    <option value="en">English</option>
+  </select>
+  <div class="social-media-icons">
+    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+  </div>
 </header>
 
 <section class="konto-inhalt">
   <h2>Willkommen in Ihrem Benutzerkonto</h2>
+
+  <div class="user-info">
+    <img src="profile.jpg" alt="Benutzerfoto">
+    <div>
+      <p>Name: Max Mustermann</p>
+      <p>Vorname: Max</p>
+      <p>Email: max.mustermann@example.com</p>
+      <p>Telefonnummer: +49 123456789</p>
+      <p>Seit: 01. Januar 2023</p>
+    </div>
+  </div>
+
+  <div class="legitimation">
+    <i class="fas fa-check-circle"></i>
+    <p>Legitimationsprüfung bestätigt</p>
+  </div>
+
+  <div class="edit-button">
+    <button onclick="editProfile()">Profil bearbeiten</button>
+    <button id="payment-button" onclick="openPaymentForm()">Zahlungsinformationen eingeben</button>
+  </div>
+
+  <section class="reviews">
+    <h2>Meine Bewertungen</h2>
+    <p>Hier sind Ihre Bewertungen für unsere Dienstleistungen.</p>
+    <!-- Fügen Sie hier Ihre Bewertungen hinzu -->
+  </section>
 
   <!-- gebuchte Reisen -->
   <section class="booking-details">
@@ -33,13 +279,23 @@
     <p>Reiseart: Rundreise</p>
     <p>Preis: 2500€</p>
   </section>
+  <section class="referral-bonus">
+    <h2>Empfehlungsboni</h2>
+    <p>Empfehlen Sie uns an Freunde und erhalten Sie tolle Boni für jeden geworbenen Freund!</p>
+    <ul>
+      <li>
+        <strong>1. Bonus</strong> - 10% Rabatt auf Ihre nächste Reisebuchung.
+      </li>
+      <li>
+        <strong>2. Bonus</strong> - 30% Rabatt auf Ihre nächste Reisebuchung.
+      </li>
+      <li>
+        <strong>3. Bonus</strong> - 50€ Reisegutschein für jede erfolgreiche Empfehlung.
+      </li>
+    </ul>
+    <a href="empfehlung.html" class="referral-button">Jetzt empfehlen</a>
+  </section>
 
-  <!-- Stornierungsoptionen  -->
-  <div class="stornierung">
-    <h3>Stornierung</h3>
-    <p>Um eine Reise zu stornieren, drücken Sie die entsprechende Taste.</p>
-    <button id="stornierungs-button">Reise Stornieren</button>
-  </div>
 </section>
 
 <footer>
@@ -56,11 +312,20 @@
   function logout() {
     window.location.href = 'index.html';
   }
-</script>
-<script>
-  document.getElementById("stornierungs-button").addEventListener("click", function() {
-    alert("Stornierung bestätigt. Die Rückerstattung wird veranlasst.");
-  });
+
+  function editProfile() {
+    // Hier können Sie den Code hinzufügen, um das Profil zu bearbeiten.
+    // Zum Beispiel, Weiterleitung zur Profilbearbeitungsseite.
+  }
+  function changeLanguage() {
+    var selectedLanguage = document.getElementById("language-select").value;
+    // Hier können Sie den Code hinzufügen, um die Sprache zu ändern, z. B. den Inhalt dynamisch übersetzen.
+  }
+
+  function openPaymentForm() {
+    // Hier können Sie den Code hinzufügen, um das Zahlungsformular zu öffnen, z. B. ein Modalfenster oder eine Weiterleitung zu einer Zahlungsseite.
+  }
+
 </script>
 </body>
 </html>
