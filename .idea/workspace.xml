@@ -4,8 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48e1049a-1eca-4b1c-95cf-02700efd5ff9" name="Changes" comment="auf der startseite ist header jetzt kleiner">
+    <list default="true" id="48e1049a-1eca-4b1c-95cf-02700efd5ff9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Datenschutz.html" beforeDir="false" afterPath="$PROJECT_DIR$/Datenschutz.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Impressum.html" beforeDir="false" afterPath="$PROJECT_DIR$/Impressum.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agb.html" beforeDir="false" afterPath="$PROJECT_DIR$/agb.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angebot.html" beforeDir="false" afterPath="$PROJECT_DIR$/angebot.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bewertung.html" beforeDir="false" afterPath="$PROJECT_DIR$/bewertung.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fluege.html" beforeDir="false" afterPath="$PROJECT_DIR$/fluege.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/konto.html" beforeDir="false" afterPath="$PROJECT_DIR$/konto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/popup.html" beforeDir="false" afterPath="$PROJECT_DIR$/popup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thailand.html" beforeDir="false" afterPath="$PROJECT_DIR$/thailand.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +94,8 @@
       <workItem from="1695574770060" duration="2399000" />
       <workItem from="1695635604997" duration="570000" />
       <workItem from="1695819171672" duration="305000" />
+      <workItem from="1697117761358" duration="567000" />
+      <workItem from="1697196433490" duration="9107000" />
     </task>
     <task id="LOCAL-00001" summary="lala">
       <created>1694695465952</created>
@@ -181,12 +195,12 @@
       <option name="project" value="LOCAL" />
       <updated>1696515529673</updated>
     </task>
-    <task id="LOCAL-00015" summary="Die Thailand Seite ist jetzt vom Design angepasst, aber im Header macht es noch faxen also das muss ich noch anpassen">
-      <created>1697035291632</created>
+    <task id="LOCAL-00015" summary="Ich habe die Konto-Seite verbessert.">
+      <created>1697117447755</created>
       <option name="number" value="00015" />
       <option name="presentableId" value="LOCAL-00015" />
       <option name="project" value="LOCAL" />
-      <updated>1697035291632</updated>
+      <updated>1697117447755</updated>
     </task>
     <option name="localTasksCounter" value="16" />
     <servers />
@@ -231,7 +245,7 @@
     <MESSAGE value="neues logo" />
     <MESSAGE value="auf der startseite ist header jetzt kleiner" />
     <MESSAGE value="Testneu" />
-    <MESSAGE value="Die Thailand Seite ist jetzt vom Design angepasst, aber im Header macht es noch faxen also das muss ich noch anpassen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Die Thailand Seite ist jetzt vom Design angepasst, aber im Header macht es noch faxen also das muss ich noch anpassen" />
+    <MESSAGE value="Ich habe die Konto-Seite verbessert." />
+    <option name="LAST_COMMIT_MESSAGE" value="Ich habe die Konto-Seite verbessert." />
   </component>
 </project>

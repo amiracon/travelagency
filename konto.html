@@ -6,10 +6,12 @@
   <title>Mein Konto</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-
+  <style>
+  </style>
 </head>
 <body>
 <header>
+
   <div class="logo">
     <i class="fas fa-plane-departure"></i>
     <h1>StudiJet</h1>
@@ -20,10 +22,46 @@
       <li><a href="#" onclick="logout()">Abmelden</a></li>
     </ul>
   </nav>
+  <select id="language-select">
+    <option value="de">Deutsch</option>
+    <option value="en">English</option>
+  </select>
+  <div class="social-media-icons">
+    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+  </div>
 </header>
 
 <section class="konto-inhalt">
   <h2>Willkommen in Ihrem Benutzerkonto</h2>
+
+  <div class="user-info">
+    <img src="profile.jpg" alt="Benutzerfoto">
+    <div>
+      <p>Name: Max Mustermann</p>
+      <p>Vorname: Max</p>
+      <p>Email: max.mustermann@example.com</p>
+      <p>Telefonnummer: +49 123456789</p>
+      <p>Seit: 01. Januar 2023</p>
+    </div>
+  </div>
+
+  <div class="legitimation">
+    <i class="fas fa-check-circle"></i>
+    <p>Legitimationsprüfung bestätigt</p>
+  </div>
+
+  <div class="edit-button">
+    <button onclick="editProfile()">Profil bearbeiten</button>
+    <button id="payment-button" onclick="openPaymentForm()">Zahlungsinformationen eingeben</button>
+  </div>
+
+  <section class="reviews">
+    <h2>Meine Bewertungen</h2>
+    <p>Hier sind Ihre Bewertungen für unsere Dienstleistungen.</p>
+    <!-- Fügen Sie hier Ihre Bewertungen hinzu -->
+  </section>
 
   <!-- gebuchte Reisen -->
   <section class="booking-details">
@@ -33,20 +71,31 @@
     <p>Reiseart: Rundreise</p>
     <p>Preis: 2500€</p>
   </section>
+  <button class="stornieren-button" onclick="bestaetigeStornierung()">Reise stornieren</button>
+  <section class="referral-bonus">
+    <h2>Empfehlungsboni</h2>
+    <p>Empfehlen Sie uns an Freunde und erhalten Sie tolle Boni für jeden geworbenen Freund!</p>
+    <ul>
+      <li>
+        <strong>1. Bonus</strong> - 10% Rabatt auf Ihre nächste Reisebuchung.
+      </li>
+      <li>
+        <strong>2. Bonus</strong> - 30% Rabatt auf Ihre nächste Reisebuchung.
+      </li>
+      <li>
+        <strong>3. Bonus</strong> - 50€ Reisegutschein für jede erfolgreiche Empfehlung.
+      </li>
+    </ul>
+    <a href="empfehlung.html" class="referral-button">Jetzt empfehlen</a>
+  </section>
 
-  <!-- Stornierungsoptionen  -->
-  <div class="stornierung">
-    <h3>Stornierung</h3>
-    <p>Um eine Reise zu stornieren, drücken Sie die entsprechende Taste.</p>
-    <button id="stornierungs-button">Reise Stornieren</button>
-  </div>
 </section>
 
 <footer>
   <div class="footer-menu">
     <ul>
       <li><a href="impressum.html">Impressum</a></li>
-      <li><a href="#datenschutz">Datenschutz</a></li>
+      <li><a href="Datenschutz.html">Datenschutz</a></li>
       <li><a href="#agb">AGB</a></li>
     </ul>
   </div>
@@ -56,11 +105,26 @@
   function logout() {
     window.location.href = 'index.html';
   }
-</script>
-<script>
-  document.getElementById("stornierungs-button").addEventListener("click", function() {
-    alert("Stornierung bestätigt. Die Rückerstattung wird veranlasst.");
-  });
+
+  function editProfile() {
+    // Hier können Sie den Code hinzufügen, um das Profil zu bearbeiten.
+    // Zum Beispiel, Weiterleitung zur Profilbearbeitungsseite.
+  }
+  function changeLanguage() {
+    var selectedLanguage = document.getElementById("language-select").value;
+    // Hier können Sie den Code hinzufügen, um die Sprache zu ändern, z. B. den Inhalt dynamisch übersetzen.
+  }
+
+  function openPaymentForm() {
+    // Hier können Sie den Code hinzufügen, um das Zahlungsformular zu öffnen, z. B. ein Modalfenster oder eine Weiterleitung zu einer Zahlungsseite.
+  }
+  function bestaetigeStornierung() {
+    if (confirm('Möchten Sie die Reise nach Thailand wirklich stornieren?')) {
+      // Benutzer hat die Stornierung bestätigt, füge hier die Stornierungslogik hinzu.
+      alert('Reise nach Thailand wurde erfolgreich storniert.'); // Zeigt eine Benachrichtigung an
+    }
+  }
+
 </script>
 </body>
 </html>

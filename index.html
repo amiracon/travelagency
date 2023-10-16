@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>StudiJet</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
+
 <header>
   <div class="logo">
     <i class="fas fa-plane-departure"></i>
@@ -24,6 +30,14 @@
       <li><a href="popup.html">Registrieren</a></li>
     </ul>
   </nav>
+  <select id="language-select">
+    <option value="de">Deutsch</option>
+    <option value="en">English</option>
+  </select>
+  <div class="social-media-icons">
+    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a></div>
 </header>
 
 <section class="startseite">
@@ -33,25 +47,68 @@
 
 <section class="bestseller">
   <h2>Unsere Bestseller-Reisen</h2>
-  <div class="reise">
+  <div class="reisen-container">
     <div class="reisekarte">
-      <img src="https://images.ctfassets.net/rc3dlxapnu6k/4EIdzcXtVA6OhzaSxIzN2m/0d22f33e34456a8a6486751127e1a5db/Thailand_Phuket_Boote.jpg?w=1238&h=696&fl=progressive&q=50&fm=jpg" alt="Reiseziel 1">
+      <div class="image-container">
+        <img src="https://images.ctfassets.net/rc3dlxapnu6k/4EIdzcXtVA6OhzaSxIzN2m/0d22f33e34456a8a6486751127e1a5db/Thailand_Phuket_Boote.jpg?w=1238&h=696&fl=progressive&q=50&fm=jpg" alt="Reiseziel 1">
+        <div class="image-overlay">
+          <a href="thailand.html">Mehr erfahren</a>
+        </div>
+      </div>
       <h3>Thailand Rundreise</h3>
-      <a href="thailand.html">Mehr erfahren</a>
     </div>
+
     <div class="reisekarte">
-      <img src="https://image.geo.de/30135476/t/zX/v3/w1440/r0/-/matera-f-208435467-jpg--76972-.jpg" alt="Reiseziel 2">
+      <div class="image-container">
+        <img src="https://image.geo.de/30135476/t/zX/v3/w1440/r0/-/matera-f-208435467-jpg--76972-.jpg" alt="Reiseziel 2">
+        <div class="image-overlay">
+          <a href="ziel2_detail.html">Mehr erfahren</a>
+        </div>
+      </div>
       <h3>Matera 5 Tage Citytrip</h3>
-      <a href="ziel2_detail.html">Mehr erfahren</a>
     </div>
   </div>
 </section>
-
+</section>
+<section class="business-travel">
+  <h2>Planen und buchen Sie Reise in nur 5 Minuten</h2>
+  <div class="stats">
+    <div class="stat">
+      <div class="number">+1 Mio</div>
+      <div class="description">Hotels via 72 Portale</div>
+    </div>
+    <div class="stat">
+      <div class="number">800 Mio</div>
+      <div class="description">Airbnb Unterkünfte</div>
+    </div>
+    <div class="stat">
+      <div class="number">5 Min</div>
+      <div class="description">Tür-zu-Tür Buchung</div>
+    </div>
+  </div>
+  <a href="angebot.html" class="cta-button">Jetzt buchen!</a>
+</section>
+<section class="payment-methods">
+  <h2>Unsere Bezahlarten</h2>
+  <ul>
+    <li><i style="font-size:24px" class="fa">&#xf1f0;</i>
+    </li>
+    <table border="0" cellpadding="10" cellspacing="0" align="center"><tbody><tr><td align="center"></td></tr><tr><td align="center"><a href="https://ad.doubleclick.net/ddm/trackclk/N426203.3410571DEPAYPALLOGOCENTE/B21619412.227908863;dc_trk_aid=425874235;dc_trk_cid=105298277;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=" title="So funktioniert PayPal" onclick="javascript:window.open('https://ad.doubleclick.net/ddm/trackclk/N426203.3410571DEPAYPALLOGOCENTE/B21619412.227908863;dc_trk_aid=425874235;dc_trk_cid=105298277;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=715, height=539); return false;"><img src="https://www.paypalobjects.com/webstatic/de_DE/i/de-pp-logo-100px.png" border="0" alt="PayPal Logo" /></a></td></tr></tbody></table>
+  </ul>
+</section>
+<section class="contact-info">
+  <h2>Kontakt</h2>
+  <p>StudiJet<br>
+    Coblitzallee 1-9<br>
+    68163 Mannheim</p>
+  <p><strong>Telefon:</strong> 062141050<br>
+    <strong>E-Mail:</strong> studijet@gmail.com</p>
+</section>
 <footer>
   <div class="footer-menu">
     <ul>
       <li><a href="impressum.html">Impressum</a></li>
-      <li><a href="#datenschutz">Datenschutz</a></li>
+      <li><a href="Datenschutz.html">Datenschutz</a></li>
       <li><a href="agb.html">AGB</a></li>
     </ul>
   </div>
@@ -61,6 +118,23 @@
   function openLoginPopup() {
     window.open('login.html', '_blank', 'width=400,height=400'); // Öffnet das Popup in einem neuen Fenster oder Tab
   }
+  // Karte initialisieren
+  var karte = L.map('karte').setView([0, 0], 2); // Hiermit wird die Karte zentriert und gezoomt
+
+  // Hinzufügen einer Basiskarte (z.B. OpenStreetMap)
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+  }).addTo(karte);
+
+  // Marker für Matera, Italien
+  L.marker([40.666670, 16.616670]).addTo(karte)
+          .bindPopup('Matera, Italien')
+          .openPopup();
+
+  // Marker für Phuket, Thailand
+  L.marker([7.880448, 98.392250]).addTo(karte)
+          .bindPopup('Phuket, Thailand')
+          .openPopup();
 </script>
 </body>
 </html>
