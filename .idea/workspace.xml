@@ -181,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696515529673</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Die Thailand Seite ist jetzt vom Design angepasst, aber im Header macht es noch faxen also das muss ich noch anpassen">
+      <created>1697035291632</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1697035291632</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,6 +231,7 @@
     <MESSAGE value="neues logo" />
     <MESSAGE value="auf der startseite ist header jetzt kleiner" />
     <MESSAGE value="Testneu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testneu" />
+    <MESSAGE value="Die Thailand Seite ist jetzt vom Design angepasst, aber im Header macht es noch faxen also das muss ich noch anpassen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Die Thailand Seite ist jetzt vom Design angepasst, aber im Header macht es noch faxen also das muss ich noch anpassen" />
   </component>
 </project>
