@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
+<header class="site-header">
     <div class="logo">
         <i class="fas fa-plane-departure"></i>
         <h1>StudiJet</h1>
@@ -35,20 +35,28 @@
         <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
         <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a></div>
 </header>
+</header>
+
+<br>
+
 
 <ul>
     <li><i class="fas fa-plane-arrival"></i><a > Abflughäfen</a></li>
     <p> Frankfurt, Düsseldorf, Hamburg und München</p>
+    <br>
     <li><i class="fa-solid fa-map-pin"></i><a > Reiseziele</a></li>
     <p> Bangkok, Ayutthaya, Chiang Mai, Phuket</p>
+    <br>
     <li><i class="fa-solid fa-hourglass-start"></i><a > Reisedauer</a></li>
     <p> 14 Tage / 13 Nächte </p>
+    <br>
     <li> <i class="fa-solid fa-star"></i> <a> Reisehöhepunkte </a></li>
     <p> Erleben Sie die faszinierende Kultur und Geschichte Thailands in Bangkok und Ayutthaya.</p>
     <p> Entdecken Sie die malerischen Tempel und grünen Landschaften von Chiang Mai.</p>
     <p> Entspannen Sie an den atemberaubenden Stränden von Phuket.</p>
     <p>Probieren Sie die köstliche thailändische Küche auf einem Street-Food-Markt.</p>
     <p> Tauchen Sie ein in die reiche lokale Kultur und besuchen Sie traditionelle Dörfer.</p>
+    <br>
 
     <h1>Reiseplan: Thailand Rundreise</h1>
     <table border="1">
@@ -162,85 +170,27 @@
 
 <style>
 
-ul {
-  list-style: none;
-  padding: 20px;
-}
-
-ul li {
-  margin: 10px 0;
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid #ccc;
-  padding: 10px 0;
-}
-
 ul li i {
   margin-right: 10px;
   font-size: 20px;
   color: #0074a6; /* Icon color */
 }
-
-ul li a {
-  text-decoration: none;
-  color: #0074a6; /* Link color */
-  font-weight: bold;
-  transition: color 0.3s; /* Smooth color transition on hover */
-}
-
-/* Change link color on hover */
-ul li a:hover {
-  color: #004466; /* Hover color */
-}
-
-/* Style the program details */
 table {
   width: 100%;
   border-collapse: collapse;
   margin: 20px;
 }
-
 table, th, td {
   border: 1px solid #ccc;
 }
-
 th, td {
   padding: 10px;
   text-align: left;
 }
-
-/* Style the page title */
-h1 {
-  text-align: center;
-  margin: 20px;
-  color: #0074a6;
-}
-
-/* Style the login popup link */
-a.login-link {
-  display: block;
-  text-align: center;
-  background-color: #0074a6;
-  color: white;
-  padding: 10px;
-  text-decoration: none;
-  margin: 20px;
-  border-radius: 5px;
-  transition: background-color 0.3s; /* Smooth background color transition on hover */
-}
-
-/* Change background color on hover */
-a.login-link:hover {
-  background-color: #005580; /* Hover background color */
-}
-
-/* Style the program details table header */
 th {
   background-color: #0074a6;
   color: white;
 }
-
-/* Style the program details table rows */
 tr:nth-child(even) {
   background-color: #f0f0f0;
 }
@@ -249,6 +199,8 @@ tr:nth-child(even) {
 td {
   padding: 10px;
 }
+
+
 
 </style>
     
