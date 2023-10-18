@@ -1137,9 +1137,9 @@ button:hover {
 }
 
 .datenschutz {
-    line-height: 1.5; /* Vergrößert den Zeilenabstand */
-    padding: 10px; /* Schafft einen Abstand von 10px von den Rändern */
-    h1, h2, h3, h4, h5, h6 {
-        margin-top: 300px; /* Legen Sie den gewünschten Abstand fest, z. B. 20px */
+    line-height: 1.5;
+    padding: 10px;
+    h1, h2, h3 {
+        margin-top: 5000px; /* Legen Sie den gewünschten Abstand fest, z. B. 20px */
     }
 }
