@@ -2,53 +2,64 @@
 <html lang="de">
 
 <head>
+  <!-- Dokument-Typ und Spracheinstellung -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>StudiJet</title>
+
+  <!-- Einbindung von externen CSS-Dateien -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+  <!-- Einbindung von externen JavaScript-Dateien -->
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-
 <header>
+  <!-- Die Kopfzeile der Webseite mit Logo, Menü und sozialen Medien -->
   <div class="logo">
-    <i class="fas fa-plane-departure"></i>
+    <i class="fas fa-plane-departure"></i> <!-- Ein Symbol (Flugzeug) aus Font Awesome -->
     <h1>StudiJet</h1>
   </div>
   <nav>
     <ul>
       <li><a href="index.html">Homepage</a></li>
-       <!-- Verlinkung zur Popup-Seite -->
+      <!-- Verlinkung zur Popup-Seite -->
       <li><a href="angebot.html">Unsere Angebote</a></li>
-<!--      <li><a href="#reise-stornieren">Reise stornieren</a></li>-->
-      <li><a href="#galerie">Galerie</a></li>
-      <li><a href="#" onclick="openLoginPopup()">Anmelden</a></li>
+      <li><a href="#galerie">Bewertungen</a></li>
+      <li><a href="#" onclick="openLoginPopup()">Anmelden</a></li> <!-- Klickfunktion zur Anmeldung -->
       <li><a href="popup.html">Registrieren</a></li>
     </ul>
   </nav>
+  <label for="language-select"></label>
+  <!-- Dropdown zur Sprachauswahl -->
   <select id="language-select">
     <option value="de">Deutsch</option>
     <option value="en">English</option>
   </select>
   <div class="social-media-icons">
+    <!-- Symbole für soziale Medien-->
     <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
     <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a></div>
+    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+  </div>
 </header>
 
 <section class="startseite">
+  <!-- Einfache Willkommensmeldung auf der Startseite -->
   <h2>Willkommen bei StudiJet</h2>
   <p>Entdecken Sie unsere Bestseller-Reisen und erleben Sie unvergessliche Abenteuer.</p>
 </section>
 
 <section class="bestseller">
+  <!-- Liste der Bestseller-Reisen -->
   <h2>Unsere Bestseller-Reisen</h2>
   <div class="reisen-container">
     <div class="reisekarte">
+      <!-- Einzelne Reisekarte mit Bild und Link zum Detail der Reise -->
       <div class="image-container">
         <img src="https://images.ctfassets.net/rc3dlxapnu6k/4EIdzcXtVA6OhzaSxIzN2m/0d22f33e34456a8a6486751127e1a5db/Thailand_Phuket_Boote.jpg?w=1238&h=696&fl=progressive&q=50&fm=jpg" alt="Reiseziel 1">
         <div class="image-overlay">
@@ -59,6 +70,7 @@
     </div>
 
     <div class="reisekarte">
+      <!-- Zweite Reisekarte -->
       <div class="image-container">
         <img src="https://image.geo.de/30135476/t/zX/v3/w1440/r0/-/matera-f-208435467-jpg--76972-.jpg" alt="Reiseziel 2">
         <div class="image-overlay">
@@ -69,34 +81,52 @@
     </div>
   </div>
 </section>
-</section>
+
 <section class="business-travel">
-  <h2>Planen und buchen Sie Reise in nur 5 Minuten</h2>
+  <!-- Informationen zur Buchung von Reisen -->
+  <h2>Planen und buchen Sie Ihre Reise in nur 5 Minuten</h2>
+  <!-- Statistiken zur Verfügbarkeit von Hotels und Airbnb-Unterkünften -->
   <div class="stats">
     <div class="stat">
       <div class="number">+1 Mio</div>
       <div class="description">Hotels via 72 Portale</div>
     </div>
-    <div class="stat">
-      <div class="number">800 Mio</div>
-      <div class="description">Airbnb Unterkünfte</div>
-    </div>
-    <div class="stat">
-      <div class="number">5 Min</div>
-      <div class="description">Tür-zu-Tür Buchung</div>
-    </div>
+  <div class="stat">
+  <div class="number">800 Mio</div>
+  <div class="description">Airbnb Unterkünfte</div>
+</div>
+  <div class="stat">
+    <div class="number">5 Min</div>
+    <div class="description">Tür-zu-Tür Buchung</div>
   </div>
+  </div>
+  <!-- Button für die Buchung von Reisen -->
   <a href="angebot.html" class="cta-button">Jetzt buchen!</a>
 </section>
+
 <section class="payment-methods">
+  <!-- Akzeptierte Zahlungsmethoden -->
   <h2>Unsere Bezahlarten</h2>
   <ul>
-    <li><i style="font-size:24px" class="fa">&#xf1f0;</i>
-    </li>
-    <table border="0" cellpadding="10" cellspacing="0" align="center"><tbody><tr><td align="center"></td></tr><tr><td align="center"><a href="https://ad.doubleclick.net/ddm/trackclk/N426203.3410571DEPAYPALLOGOCENTE/B21619412.227908863;dc_trk_aid=425874235;dc_trk_cid=105298277;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=" title="So funktioniert PayPal" onclick="javascript:window.open('https://ad.doubleclick.net/ddm/trackclk/N426203.3410571DEPAYPALLOGOCENTE/B21619412.227908863;dc_trk_aid=425874235;dc_trk_cid=105298277;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=715, height=539); return false;"><img src="https://www.paypalobjects.com/webstatic/de_DE/i/de-pp-logo-100px.png" border="0" alt="PayPal Logo" /></a></td></tr></tbody></table>
+    <!-- Hier wird das PayPal-Logo verlinkt -->
+    <li><i style="font-size:24px" class="fa">&#xf1f0;</i></li>
+      <tbody>
+      <tr>
+        <td align="center">
+          <!-- Link zu PayPal-Zahlungsinformationen -->
+          <a href="https://ad.doubleclick.net/ddm/trackclk/N426203.3410571DEPAYPALLOGOCENTE/B21619412.227908863;dc_trk_aid=425874235;dc_trk_cid=105298277;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=" title="So funktioniert PayPal" onclick="window.open('https://ad.doubleclick.net/ddm/trackclk/N426203.3410571DEPAYPALLOGOCENTE/B21619412.227908863;dc_trk_aid=425874235;dc_trk_cid=105298277;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=715, height=539); return false;">
+            <!-- PayPal-Logo -->
+            <img src="https://www.paypalobjects.com/webstatic/de_DE/i/de-pp-logo-100px.png" border="0" alt="PayPal Logo" />
+          </a>
+        </td>
+      </tr>
+      </tbody>
+    </table>
   </ul>
 </section>
+
 <section class="contact-info">
+  <!-- Kontaktinformationen des Unternehmens -->
   <h2>Kontakt</h2>
   <p>StudiJet<br>
     Coblitzallee 1-9<br>
@@ -104,11 +134,12 @@
   <p><strong>Telefon:</strong> 062141050<br>
     <strong>E-Mail:</strong> studijet@gmail.com</p>
 </section>
+
 <footer>
   <div class="footer-menu">
     <ul>
       <li><a href="impressum.html">Impressum</a></li>
-      <li><a href="Datenschutz.html">Datenschutz</a></li>
+      <li><a href="datenschutz.html">Datenschutz</a></li>
       <li><a href="agb.html">AGB</a></li>
     </ul>
   </div>
@@ -116,25 +147,9 @@
 
 <script>
   function openLoginPopup() {
-    window.open('login.html', '_blank', 'width=400,height=400'); // Öffnet das Popup in einem neuen Fenster oder Tab
+    // Funktion zum Öffnen eines Anmelde-Popups in einem neuen Fenster
+    window.open('login.html', '_blank', 'width=400,height=400');
   }
-  // Karte initialisieren
-  var karte = L.map('karte').setView([0, 0], 2); // Hiermit wird die Karte zentriert und gezoomt
-
-  // Hinzufügen einer Basiskarte (z.B. OpenStreetMap)
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-  }).addTo(karte);
-
-  // Marker für Matera, Italien
-  L.marker([40.666670, 16.616670]).addTo(karte)
-          .bindPopup('Matera, Italien')
-          .openPopup();
-
-  // Marker für Phuket, Thailand
-  L.marker([7.880448, 98.392250]).addTo(karte)
-          .bindPopup('Phuket, Thailand')
-          .openPopup();
 </script>
 </body>
 </html>

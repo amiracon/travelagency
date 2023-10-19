@@ -22,14 +22,15 @@
       <li><a href="#" onclick="logout()">Abmelden</a></li>
     </ul>
   </nav>
-  <select id="language-select">
-    <option value="de">Deutsch</option>
-    <option value="en">English</option>
-  </select>
+
   <div class="social-media-icons">
     <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
     <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
     <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+    <select id="language-select">
+      <option value="de">Deutsch</option>
+      <option value="en">English</option>
+    </select>
   </div>
 </header>
 
@@ -37,14 +38,14 @@
   <h2>Willkommen in Ihrem Benutzerkonto</h2>
 
   <div class="user-info">
-    <img src="profile.jpg" alt="Benutzerfoto">
-    <div>
+    <div class="user-info-content">
       <p>Name: Max Mustermann</p>
       <p>Vorname: Max</p>
       <p>Email: max.mustermann@example.com</p>
       <p>Telefonnummer: +49 123456789</p>
       <p>Seit: 01. Januar 2023</p>
     </div>
+    <img src="https://raw.githubusercontent.com/amiracon/travelagency/main/Blog_Heroteaser_Sicher-reisen_1600x550_03-1.jpg" alt="Benutzerfoto" class="user-avatar">
   </div>
 
   <div class="legitimation">
@@ -70,8 +71,9 @@
     <p>Ziel: Thailand</p>
     <p>Reiseart: Rundreise</p>
     <p>Preis: 2500€</p>
+    <button class="stornieren-button" onclick="bestaetigeStornierung()">Reise stornieren</button>
   </section>
-  <button class="stornieren-button" onclick="bestaetigeStornierung()">Reise stornieren</button>
+
   <section class="referral-bonus">
     <h2>Empfehlungsboni</h2>
     <p>Empfehlen Sie uns an Freunde und erhalten Sie tolle Boni für jeden geworbenen Freund!</p>
