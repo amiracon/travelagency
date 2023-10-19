@@ -1125,3 +1125,13 @@ button:hover {
     background-color: #007acc; /* Blaue Schaltfläche für Stornierung */
     color: #fff;
 }
+
+.datenschutz {
+    line-height: 1.5;
+    padding: 50px;
+    h1, h2, h3 {
+        margin-top: 5000px; /* Legen Sie den gewünschten Abstand fest, z. B. 20px */
+    }
+}
+
+
