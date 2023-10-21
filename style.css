@@ -489,7 +489,6 @@ body {font-family: Verdana, sans-serif;}
 }
 
 .image-container {
-    position: relative;
     overflow: hidden;
 }
 
@@ -500,21 +499,16 @@ body {font-family: Verdana, sans-serif;}
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.6); /* Hintergrundfarbe des Overlays */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     opacity: 0; /* Das Overlay ist zu Beginn unsichtbar */
-    transition: opacity 0.3s;
 }
 
 .image-overlay a {
     color: #fff; /* Schriftfarbe des Links im Overlay */
-    text-decoration: none;
+    text-decoration: none
 }
 
 .image-container:hover .image-overlay {
-    opacity: 1; /* Das Overlay wird sichtbar, wenn du über das Bild fährst */
+    opacity: 1; /* Das Overlay wird sichtbar, wenn man über das Bild fährt */
 }
 .reisen-container {
     display: flex;
@@ -525,21 +519,6 @@ body {font-family: Verdana, sans-serif;}
 .image-container {
     position: relative;
     overflow: hidden;
-}
-
-.image-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s;
 }
 
 
@@ -617,21 +596,32 @@ nav a {
     font-size: 24px;
 }
 
+.-info {
+    display: flex;
+    align-useritems: center;
+    margin-top: 20px;
+}
+
 .user-info {
     display: flex;
     align-items: center;
     margin-top: 20px;
 }
 
-.user-info img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+.user-avatar {
+    width: 250px; /* Größe des Avatars ändern */
+    height: 200px;
+    border-radius: 40%;
     margin-right: 20px;
+}
+
+.user-info-content {
+    flex: 1; /* Nimmt den verfügbaren Platz ein */
 }
 
 .user-info p {
     font-size: 18px;
+    margin-bottom: 5px; /* Abstand zwischen den Textabschnitten hinzufügen */
 }
 
 .legitimation {
@@ -728,7 +718,7 @@ nav a {
 }
 
 .social-icon:hover {
-    color: #1a6ca8; /* Ändern Sie die Farbe beim Hover-Effekt */
+    color: #1a6ca8;
 }
 .referral-bonus {
     background-color: #f9f9f9;
@@ -897,7 +887,7 @@ nav a {
     padding: 20px;
     flex: 30%; /* Ändert die Breite der Kästchen */
     margin: 10px;
-    transition: transform 0.3s;
+
 }
 
 .stat:hover {
@@ -1137,9 +1127,11 @@ button:hover {
 }
 
 .datenschutz {
-    line-height: 1.5; /* Vergrößert den Zeilenabstand */
-    padding: 10px; /* Schafft einen Abstand von 10px von den Rändern */
-    h1, h2, h3, h4, h5, h6 {
-        margin-top: 300px; /* Legen Sie den gewünschten Abstand fest, z. B. 20px */
+    line-height: 1.5;
+    padding: 50px;
+    h1, h2, h3 {
+        margin-top: 5000px; /* Legen Sie den gewünschten Abstand fest, z. B. 20px */
     }
 }
+
+
