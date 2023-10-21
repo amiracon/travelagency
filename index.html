@@ -18,6 +18,25 @@
 </head>
 
 <body>
+
+<div class="cookie-popup">
+<p>Wir verwenden Cookies, um die bestmögliche Erfahrung auf unserer Website zu bieten. Durch die Nutzung dieser Website stimmen Sie der Verwendung von Cookies zu.</p>
+<button id="accept-cookies">Zustimmen</button>
+</div>
+
+<script>
+    const acceptCookiesButton = document.getElementById("accept-cookies");
+    const cookiePopup = document.querySelector(".cookie-popup");
+
+    acceptCookiesButton.addEventListener("click", () => {
+      // Speichern Sie die Zustimmung des Benutzers in einem Cookie oder im localStorage.
+      // Hier wird ein Dummy-Cookie namens "acceptedCookies" erstellt.
+      document.cookie = "acceptedCookies=true; max-age=31536000; path=/";
+
+      // Verbergen Sie die Cookie-Zustimmungsseite.
+      cookiePopup.style.display = "none";
+    });
+  </script>
 <header>
   <!-- Die Kopfzeile der Webseite mit Logo, Menü und sozialen Medien -->
   <div class="logo">
@@ -151,5 +170,14 @@
     window.open('login.html', '_blank', 'width=400,height=400');
   }
 </script>
+<body>
+
+
+
+</body>
 </body>
 </html>
+
+<style>
+
+</style>
