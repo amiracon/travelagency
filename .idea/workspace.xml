@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48e1049a-1eca-4b1c-95cf-02700efd5ff9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/konto.html" beforeDir="false" afterPath="$PROJECT_DIR$/konto.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698075002182</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Konto Seite">
+      <created>1698075233308</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1698075233308</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,6 +249,7 @@
     <MESSAGE value="Testneu" />
     <MESSAGE value="Ich habe die Konto-Seite verbessert." />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="Konto Seite" />
+    <option name="LAST_COMMIT_MESSAGE" value="Konto Seite" />
   </component>
 </project>
