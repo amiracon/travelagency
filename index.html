@@ -12,31 +12,24 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 
+
   <!-- Einbindung von externen JavaScript-Dateien -->
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+<!-- Ihr Seiteninhalt -->
 
-<div class="cookie-popup">
-<p>Wir verwenden Cookies, um die bestmögliche Erfahrung auf unserer Website zu bieten. Durch die Nutzung dieser Website stimmen Sie der Verwendung von Cookies zu.</p>
-<button id="accept-cookies">Zustimmen</button>
+<div id="popup" class="popup1">
+  <div class="popup-content1">
+    <p>Diese Website verwendet Cookies. Durch die Nutzung dieser Website stimmen Sie der Verwendung von Cookies zu.</p>
+    <button id="accept-cookie" class="cookie-button">Zustimmen</button>
+  </div>
 </div>
+</body>
 
-<script>
-    const acceptCookiesButton = document.getElementById("accept-cookies");
-    const cookiePopup = document.querySelector(".cookie-popup");
 
-    acceptCookiesButton.addEventListener("click", () => {
-      // Speichern Sie die Zustimmung des Benutzers in einem Cookie oder im localStorage.
-      // Hier wird ein Dummy-Cookie namens "acceptedCookies" erstellt.
-      document.cookie = "acceptedCookies=true; max-age=31536000; path=/";
-
-      // Verbergen Sie die Cookie-Zustimmungsseite.
-      cookiePopup.style.display = "none";
-    });
-  </script>
 <header>
   <!-- Die Kopfzeile der Webseite mit Logo, Menü und sozialen Medien -->
   <div class="logo">
@@ -123,6 +116,9 @@
   <a href="angebot.html" class="cta-button">Jetzt buchen!</a>
 </section>
 
+
+
+
 <section class="payment-methods">
   <!-- Akzeptierte Zahlungsmethoden -->
   <h2>Unsere Bezahlarten</h2>
@@ -172,6 +168,7 @@
 </script>
 <body>
 
+<script src="script.js"></script>
 
 
 </body>

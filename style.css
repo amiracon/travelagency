@@ -1135,5 +1135,27 @@ button:hover {
 }
 
 
+.popup1 {
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+
+.popup-content1 {
+    text-align: center;
+}
+
+.cookie-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
 
 
