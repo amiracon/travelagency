@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48e1049a-1eca-4b1c-95cf-02700efd5ff9" name="Changes" comment="ich mache die Datenschutz Seite erstellt">
+    <list default="true" id="48e1049a-1eca-4b1c-95cf-02700efd5ff9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datenschutz.html" beforeDir="false" afterPath="$PROJECT_DIR$/datenschutz.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/konto.html" beforeDir="false" afterPath="$PROJECT_DIR$/konto.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,6 +85,8 @@
       <workItem from="1695574770060" duration="2399000" />
       <workItem from="1695635604997" duration="570000" />
       <workItem from="1695819171672" duration="305000" />
+      <workItem from="1697117761358" duration="567000" />
+      <workItem from="1697196433490" duration="9107000" />
     </task>
     <task id="LOCAL-00001" summary="lala">
       <created>1694695465952</created>
@@ -176,56 +179,21 @@
       <option name="project" value="LOCAL" />
       <updated>1695630128394</updated>
     </task>
-    <task id="LOCAL-00014" summary="ich mache die Datenschutz Seite erstellt">
-      <created>1695821637534</created>
+    <task id="LOCAL-00014" summary="Testneu">
+      <created>1696515529673</created>
       <option name="number" value="00014" />
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
-      <updated>1695821637534</updated>
+      <updated>1696515529673</updated>
     </task>
-    <task id="LOCAL-00015" summary="ich mache die Datenschutz Seite erstellt">
-      <created>1696506313021</created>
+    <task id="LOCAL-00015" summary="Ich habe die Konto-Seite verbessert.">
+      <created>1697117447755</created>
       <option name="number" value="00015" />
       <option name="presentableId" value="LOCAL-00015" />
       <option name="project" value="LOCAL" />
-      <updated>1696506313021</updated>
+      <updated>1697117447755</updated>
     </task>
-    <task id="LOCAL-00016" summary="Thailand File">
-      <created>1697888295489</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1697888295489</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Bewertung jetzt verlinkt in jeder File">
-      <created>1697888652778</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1697888652778</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Bewertung jetzt verlinkt in jeder File">
-      <created>1697888779290</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1697888779290</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Update">
-      <created>1697889762007</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1697889762007</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Bewertung ist jetzt da">
-      <created>1697890733293</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1697890733293</updated>
-    </task>
-    <option name="localTasksCounter" value="21" />
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,12 +235,8 @@
     <MESSAGE value="hab Menü angepasst" />
     <MESSAGE value="neues logo" />
     <MESSAGE value="auf der startseite ist header jetzt kleiner" />
-    <MESSAGE value="ich mache die Datenschutz Seite erstellt" />
-    <MESSAGE value="Thailand File" />
-    <MESSAGE value="Bewertung jetzt verlinkt in jeder File" />
-    <MESSAGE value="Update" />
-    <MESSAGE value="Bewertung ist jetzt da" />
-    <MESSAGE value="Cookies ??" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cookies ??" />
+    <MESSAGE value="Testneu" />
+    <MESSAGE value="Ich habe die Konto-Seite verbessert." />
+    <option name="LAST_COMMIT_MESSAGE" value="Ich habe die Konto-Seite verbessert." />
   </component>
 </project>
