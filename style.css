@@ -609,9 +609,9 @@ nav a {
 }
 
 .user-avatar {
-    width: 250px;
-    height: 200px;
-    border-radius: 40%;
+    width: 200px;
+    height: 150px;
+    border-radius: 50%;
     margin-right: 20px;
 }
 
