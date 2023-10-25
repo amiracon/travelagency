@@ -349,6 +349,7 @@ nav a {
 }
 
 /* Container für Angebotselemente */
+/* Container für Angebotselemente */
 .angebote {
     display: flex; /* Flexbox-Layout für horizontale Anordnung */
     flex-wrap: wrap; /* Elemente umbrechen, wenn nicht genug Platz vorhanden ist */
@@ -409,12 +410,6 @@ nav a {
     background-color: #0056b3; /* Dunklere Hintergrundfarbe beim Schweben */
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #0074d9;
-    color: #fff;
-}
 
 /* Sheet für Kalender */
 
