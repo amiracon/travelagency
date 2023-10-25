@@ -306,11 +306,7 @@ footer {
             margin-top: 20px;
         }
 
-/* Neue*/
-/* Reset CSS */
 
-
-/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
@@ -352,57 +348,65 @@ nav a {
     font-weight: bold;
 }
 
+/* Container für Angebotselemente */
 .angebote {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px;
+    display: flex; /* Flexbox-Layout für horizontale Anordnung */
+    flex-wrap: wrap; /* Elemente umbrechen, wenn nicht genug Platz vorhanden ist */
+    justify-content: space-between; /* Platz zwischen Elementen gleichmäßig verteilen */
+    padding: 20px; /* Innenabstand zum Container hinzufügen */
 }
 
+/* Einzelnes Angebotselement */
 .angebot {
-    width: calc(33.33% - 20px);
-    background-color: #fff;
-    margin: 10px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    text-align: center;
-    transition: transform 0.2s ease-in-out;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 20px); /* 33,33% Breite mit Abstand zwischen den Elementen */
+    background-color: #fff; /* Weiße Hintergrundfarbe */
+    margin: 10px; /* Abstand um jedes Angebotselement */
+    padding: 20px; /* Innenabstand im Angebotselement */
+    border: 1px solid #ddd; /* 1-Pixel Umrandung in Grau */
+    border-radius: 5px; /* Abgerundete Ecken */
+    text-align: center; /* Text zentriert ausrichten */
+    transition: transform 0.2s ease-in-out; /* Animation beim Schweben definieren */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Schatten für leicht erhabenes Erscheinungsbild */
 }
 
+/* Effekt beim Schweben über ein Angebotselement */
 .angebot:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* Element um 5 Pixel nach oben verschieben */
 }
 
+/* Bilder in Angebotselementen */
 .angebot img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
+    max-width: 100%; /* Bild auf volle Breite skalieren */
+    height: auto; /* Höhe proportional anpassen */
+    border-radius: 5px; /* Abgerundete Ecken für Bilder */
 }
 
+/* Überschrift in Angebotselementen */
 .angebot h2 {
-    font-size: 1.5rem;
-    margin: 10px 0;
+    font-size: 1.5rem; /* Schriftgröße für Überschrift */
+    margin: 10px 0; /* Abstand oben und unten */
 }
 
+/* Text in Angebotselementen */
 .angebot p {
-    font-size: 1rem;
-    margin: 5px 0;
+    font-size: 1rem; /* Schriftgröße für Text */
+    margin: 5px 0; /* Abstand oben und unten */
 }
 
+/* Links in Angebotselementen */
 .angebot a {
-    text-decoration: none;
-    background-color: #0074d9;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 10px;
+    text-decoration: none; /* Link-Unterstreichung entfernen */
+    background-color: #0074d9; /* Blauer Hintergrund */
+    color: #fff; /* Weiße Schriftfarbe */
+    padding: 5px 10px; /* Innenabstand für Links */
+    border-radius: 5px; /* Abgerundete Ecken für Links */
+    display: inline-block; /* Inline-Block-Anzeige für Links */
+    margin-top: 10px; /* Abstand oben */
 }
 
+/* Effekt beim Schweben über Links in Angebotselementen */
 .angebot a:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Dunklere Hintergrundfarbe beim Schweben */
 }
 
 footer {
