@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48e1049a-1eca-4b1c-95cf-02700efd5ff9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="48e1049a-1eca-4b1c-95cf-02700efd5ff9" name="Changes" comment="Konto Seite">
       <change beforePath="$PROJECT_DIR$/bewertung.html" beforeDir="false" afterPath="$PROJECT_DIR$/bewertung.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -205,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698075233308</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Konto Seite">
+      <created>1698264808226</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1698264808227</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
