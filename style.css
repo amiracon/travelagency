@@ -492,31 +492,28 @@ body {font-family: Verdana, sans-serif;}
 }
 
 .image-overlay {
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.6); /* Hintergrundfarbe des Overlays */
-    opacity: 0; /* Das Overlay ist zu Beginn unsichtbar */
+    opacity: 0;
 }
 
 .image-overlay a {
     color: #fff; /* Schriftfarbe des Links im Overlay */
-    text-decoration: none
 }
 
 .image-container:hover .image-overlay {
-    opacity: 1; /* Das Overlay wird sichtbar, wenn man über das Bild fährt */
+    opacity: 1;
 }
 .reisen-container {
     display: flex;
-    justify-content: space-between; /* Verteilt die Elemente gleichmäßig horizontal */
+    justify-content: space-between; /* horizontal */
 }
 
 
 .image-container {
-    position: relative;
     overflow: hidden;
 }
 
@@ -544,20 +541,18 @@ body {font-family: Verdana, sans-serif;}
     justify-content: center;
     align-items: center;
     opacity: 0;
-    transition: opacity 0.3s;
-    border-radius: 10px; /* Fügt abgerundete Ecken zum Overlay hinzu */
+    border-radius: 10px;
 
 }
 
 .image-overlay a {
     color: #fff;
-    text-decoration: none;
 }
 
 .image-container img {
-    max-width: 100%; /* Bilder werden innerhalb ihres Containers skaliert */
-    height: auto; /* Das Seitenverhältnis der Bilder bleibt erhalten */
-    border-radius: 10px; /* Fügt abgerundete Ecken zum Overlay hinzu */
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 
 }
 
